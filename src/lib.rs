@@ -18,7 +18,7 @@ pub use ffi::Enum_gbm_bo_format as GBMBufferObjectFormat;
 //pub use ffi::GBM_BO_FORMAT_XRGB8888;
 //pub use ffi::GBM_BO_FORMAT_ARGB8888;
 
-//pub use ffi::Enum_gbm_bo_flags as GBMBufferObjectFlags;
+pub use ffi::Enum_gbm_bo_flags as GBMBufferObjectFlags;
 //pub use ffi::GBM_BO_USE_SCANOUT;
 //pub use ffi::GBM_BO_USE_CURSOR;
 //pub use ffi::GBM_BO_USE_CURSOR_64X64;
@@ -180,8 +180,4 @@ pub fn surface_destroy(surface: GBMSurface) -> () {
     unsafe {
         gbm_surface_destroy(surface);
     }
-}
-
-#[test]
-fn it_works() {
 }
